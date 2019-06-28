@@ -1,0 +1,23 @@
+.table-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding: 3rem;
+    .wrapper{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #b3b3b3;
+        color: #3e3e3e;
+        padding: 1rem;
+        button{
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+    }
+   
+}

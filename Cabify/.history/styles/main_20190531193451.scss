@@ -1,0 +1,30 @@
+/*Imports*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+/*Variable*/
+$font: "Roboto", sans-serif;
+/*Clases*/
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/*Nav*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    li {
+      list-style: none;
+      padding-right: 0.5rem;
+      a {
+        text-decoration: none;
+        font-family: $font;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

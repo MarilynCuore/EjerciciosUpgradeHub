@@ -1,0 +1,180 @@
+nav{
+    background-color:transparent !important;
+    position:fixed;
+    width:100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    
+}
+.menu ul li:nth-of-type(4){
+    flex-grow:1;
+}
+.menu ul li a{
+    text-decoration: none;
+    line-height: 17px;
+    font-size:15px;
+    color: white;
+    padding-left: 1em;
+}
+.menu ul li a:hover{
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 2.5em;
+}
+.menu ul li a span{
+    font-family: 'Roboto', sans-serif;
+}
+.menu ul li a img{
+    width: 90px;
+    height: 98px;
+}
+.main{
+    background-image: url("https://www.bmw.es/content/dam/bmw/marketES/bmw_es/PublicPools/Teaser-Pool/Large-Teasers/Large%20Teaser_%20Stock%20locator.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.main h1{
+    padding-left:40px;
+    padding-top: 35%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.main p{
+    text-transform: uppercase;
+    padding-left:40px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    font-size:24px;
+    padding-top:15px;
+}
+.main button{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 1rem;
+    height: 50px;
+    font-size: 1em;
+    background-color: #1c69d4;
+    border-color: #0653b6;
+    color: #fff;
+    margin-left:40px;
+    min-width: 180px;
+    margin-top:15px;
+}
+.search{
+    width: 100vw;
+    height: 100vh;
+}
+.search .tab button{
+    border: none;
+    color: #262626;
+    font-size: 18px;
+    margin-top: 4em; 
+}
+.search .tab button:nth-of-type(1){
+    margin-left: 6em;
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 1em;
+}
+.search .tab button:nth-of-type(2){
+    color: #bbb;
+    margin-left:2em;
+}
+.search .searchMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+  
+}
+.search .searchMenu li:nth-of-type(1){
+    padding-left:none;
+}
+.search .searchMenu li{
+    padding-left:2em;
+}
+.search .searchMenu li a{
+    text-decoration: none;
+    font-size:20px;
+    color:  #bbb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.search ul li:nth-of-type(3) a{
+    color: black;
+    font-size:23px;
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 1em;
+}
+.search article{
+    width: 25%;
+    text-align: left;
+    padding-left: 4em;
+    padding-top:2em;
+    display:inline-block;
+}
+.search article:nth-of-type(2){
+    padding-left: 0px;
+}
+.search article h4{
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.search article h5{
+    color: #bbb;
+    font-size:16px;
+    font-weight: bold;
+}
+.search article a{
+    text-decoration:none;
+    color: black;
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+}
+.search article ul li:nth-of-type(1){
+    padding-top:1em;
+}
+article .wrapperInfoCar{
+    padding-left:2em;
+}
+.notice article img{
+    width: 235;
+    height: auto;
+}
+.notice article a{
+    font-size: 35px;
+    letter-spacing: -1.575px;
+    margin-top: -4px;
+    margin-bottom: 12px;
+    color: black;
+    text-decoration:none;
+}
+.notice article div{
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -3px;
+    margin-bottom: 12px;
+    color: black;
+}
+.notice{
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    grid-gap: 40px;
+    padding-top: 10em;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .section-one {
+    padding: 3rem;
+    width: 50%;
+    article {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      h1 {
+        font-size: 2rem;
+      }
+      img {
+        width: 500px;
+      }
+      p {
+        &:nth-of-type(1) {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .section-two {
+    width: 50%;
+  }
+}

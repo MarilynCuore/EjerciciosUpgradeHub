@@ -1,0 +1,326 @@
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color:transparent;
+    position:fixed;
+    width:100%;
+}
+.float {
+    transition: 500ms;
+}
+nav.float{
+    background: white;
+    border-bottom: solid 1px #e6e6e6;
+}
+nav.float ul li a {
+    color: black;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.menu ul{
+    display: flex;
+    align-items:center;
+}
+.menu ul li{
+  margin-left:1em;
+}
+
+nav .menu ul li a{
+    text-decoration: none;
+    line-height: 17px;
+    font-size: 15px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.menu ul li a:hover{
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 2.5em;
+}
+
+.menu ul li a img{
+    width: 90px;
+    height: 98px;
+}
+
+.main{
+    background-image: url("https://www.bmw.es/content/dam/bmw/marketES/bmw_es/PublicPools/Teaser-Pool/Large-Teasers/Large%20Teaser_%20Stock%20locator.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  
+}
+
+.main h1{
+    padding-left:40px;
+    padding-top: 70%;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.main p{
+    text-transform: uppercase;
+    padding-left:40px;
+
+    color:white;
+    font-size:24px;
+    padding-top:15px;
+    font-family: 'Roboto', sans-serif;
+}
+.main button{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 1rem;
+    height: 50px;
+    font-size: 1em;
+    background-color: #1c69d4;
+    border-color: #0653b6;
+    color: #fff;
+    margin-left:40px;
+    min-width: 180px;
+    margin-top:15px;
+}
+.search{
+    width: 100vw;
+    height: 50vh;
+    padding-bottom:4em;
+}
+.search .tab button{
+    border: none;
+    color: #262626;
+    font-size: 18px;
+    margin-top: 4em; 
+}
+.search .tab button:nth-of-type(1){
+    margin-left: 6em;
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 1em;
+}
+.search .tab button:nth-of-type(2){
+    color: #bbb;
+    margin-left:2em;
+}
+.search .searchMenu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+  
+}
+.search .searchMenu li:nth-of-type(1){
+    padding-left:none;
+}
+.search .searchMenu li{
+    padding-left:2em;
+}
+.search .searchMenu li a{
+    text-decoration: none;
+    font-size:20px;
+    color:  #bbb;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.search ul li:nth-of-type(3) a{
+    color: black;
+    font-size:23px;
+    border-bottom: solid 4px #1c69d4;
+    padding-bottom: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+.search article{
+    width: 25%;
+    text-align: left;
+    padding-left: 4em;
+    padding-top:2em;
+    display:inline-block;
+}
+.search article:nth-of-type(2){
+    padding-left: 0px;
+}
+.search article h4{
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.search article h5{
+    color: #bbb;
+    font-size:16px;
+    font-weight: bold;
+}
+.search article a{
+    text-decoration:none;
+    color: black;
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+}
+.search article ul li:nth-of-type(1){
+    padding-top:1em;
+}
+article .wrapperInfoCar{
+    padding-left:2em;
+}
+.notice article{
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+}
+.notice article img{
+    width: 235px;
+    height: auto;
+}
+.notice article h2{
+    padding-top:.5em;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    color: #262626;
+    font-family: 'Roboto', sans-serif;
+}
+.notice article:nth-of-type(4) h2{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.notice article div{
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: -3px;
+    margin-bottom: 12px;
+    color:#262626;
+    flex-grow:1;
+}
+.notice article a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+}
+.notice article a:hover{
+    color:#0653b6;
+}
+.notice{
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-gap: 40px;
+    padding-top: 10em;
+    padding-left: 6em;
+    padding-right:6em;
+    width: 100vw;
+    height: 50vh;
+    padding-bottom:6em;
+}
+.moreNotice{
+    display:grid;
+    grid-template-columns: 585px 585px;
+    grid-gap:40px;
+    padding-left: 6em;
+    padding-right:6em;
+}
+.moreNotice article{
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+}
+.moreNotice article img{
+    width:553px;
+    height: auto;
+}
+.moreNotice article h2{
+    padding-top:.5em;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    color: #262626;
+    font-family: 'Roboto', sans-serif;
+}
+.moreNotice article a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+}
+.moreNotice article a:hover{
+    color:#0653b6;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:6em;
+    padding-left:6em;
+    padding-right:6em;
+    padding-bottom: 4em;
+}
+.options .wrapper{
+    display:grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-gap:40px;
+}
+.options .wrapper div{
+    background-color: #f2f2f2;
+    height: 150px;
+}
+.options .wrapper div a{
+    text-decoration: none;
+    color: #8e8e8e;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+}
+.options .wrapper div a i{
+    font-size: 61px;
+    padding-bottom:.3em;
+}
+.options .wrapper div a:hover{
+   background-color: #e6e6e6;
+}
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+.footer .footer-wrapper{
+    display:grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    grid-gap:40px;
+
+}
+.footer .footer-wrapper div ul li a{
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+}
+.footer .footer-wrapper div ul li a:hover{
+    color: #262626;
+}
+.footer .footer-wrapper div h4{
+    font-size:18px;
+    color:#262626;
+    font-weight: bold;
+    padding-bottom:.5em;
+    font-family: 'Roboto', sans-serif;
+}

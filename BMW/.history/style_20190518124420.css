@@ -1,0 +1,31 @@
+
+nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 2em !important;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+nav ul li:nth-of-type(4){
+    flex-grow:1;
+}
+nav ul li a{
+    text-decoration: none;
+    line-height: 17px;
+    font-size:17px;
+    color: white;
+    padding-left: 1em;
+}
+nav ul li a img{
+    width: 90px;
+    height: 98px;
+}
+.main{
+    background-image: url("https://www.bmw.es/content/dam/bmw/marketES/bmw_es/PublicPools/Teaser-Pool/Large-Teasers/Large%20Teaser_%20Stock%20locator.jpg");
+    height: 100vh;
+    width: 100vw;
+}

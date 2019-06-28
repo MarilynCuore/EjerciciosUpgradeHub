@@ -1,0 +1,13 @@
+.logo{
+    width: 100px;
+    height: auto;
+}
+.header{
+    text-align: center;
+}
+.breadcrump{
+    list-style: none;
+}
+.breadcrump li{
+    display: inline-block;
+}

@@ -1,0 +1,3 @@
+<div *ngIf="ForecastService.weather$ | async as forecast">
+  <app-weather-card [weather]="weather" *ngFor="let weather of forecast"></app-weather-card>
+</div>

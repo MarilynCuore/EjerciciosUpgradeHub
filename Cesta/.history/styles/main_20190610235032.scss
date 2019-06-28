@@ -1,0 +1,47 @@
+@import "_variables";
+@import "_fonts";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: $font;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  .card {
+    width: 80%;
+    border-radius: 40px;
+    .section-one {
+      border-radius: 40px 0 0 40px;
+      -webkit-clip-path: polygon(0 0, 75% 0, 86% 100%, 0 100%);
+      clip-path: polygon(0 0, 75% 0, 86% 100%, 0 100%);
+      background-color: $grey-color;
+      .section-one__wrapper {
+        width: 50%;
+        .section-one__title {
+          h2 {
+            margin-top: 0px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 1rem;
+          }
+        }
+        .section-one__products {
+          .section-one__products_-wrapper_img {
+            img {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

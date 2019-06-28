@@ -1,0 +1,18 @@
+
+nav{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: 2em !important;
+}
+nav ul{
+    display: flex;
+    width: 80%;
+}
+nav ul li:nth-of-type(4){
+    flex-grow:1;
+}
+nav ul li a img{
+    width: 90px;
+    height: 98px;
+}

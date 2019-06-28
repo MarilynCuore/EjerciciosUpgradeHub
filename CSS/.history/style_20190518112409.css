@@ -1,0 +1,182 @@
+.logo{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+.breadcrump{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.breadcrump li{
+    display: inline-block;
+}
+
+.breadcrump li a{
+    text-decoration: none;
+    color: #d6d6d6;
+    margin-left:1em;
+    letter-spacing: 0.7px;
+}
+.breadcrump li:last-child a {
+    color: black;
+    letter-spacing: 0.7px;
+}
+.gallery-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    grid-gap: 40px;
+    padding-top: 10em;
+    font-family: 'Open Sans', sans-serif;
+}
+.gallery div img{
+    width:310px;
+}
+.gallery div img:hover{
+    content:url("https://static.pullandbear.net/2/photos//2019/V/0/1/p/5710/323/600/5710323600_4_1_8.jpg?t=1552586019650&imwidth=900");
+}
+.product-info{
+    text-align: center;
+    padding-top: 12px;
+    letter-spacing: 0.7px;
+
+}
+.product-info .product{
+    font-weight: 300;
+    padding-top:12px;
+    letter-spacing: 0.7px;
+ 
+}
+.product-info .price{
+    font-weight: bold;   
+    font-size: 16px;
+    padding-top: 12px;
+}
+.product-info .price small{
+    font-size: 12px;
+    letter-spacing: 0.7px;
+}
+.product-info .options a{
+    color: #d6d6d6;
+    text-decoration: none;
+
+}
+.product-info .options{
+    padding-top: 10px;
+}
+nav ul{
+    position: fixed;
+    padding-top: 2em;
+    padding-left: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul li:nth-of-type(1){
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 1em;
+    letter-spacing: 0.7px;
+}
+nav ul li:nth-of-type(1) span{
+    color: #3e3e3e;
+    font-size: 20px;
+}
+nav ul li{
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    padding-bottom: 1em;
+
+}
+nav ul li:nth-of-type(3){
+    font-weight: bold;
+}
+nav ul li:last-of-type{
+    color: red;
+}
+.description{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
+    text-align:center;
+    padding-top:8em;
+    padding-bottom:4em;
+}
+.description p:nth-of-type(1){
+    font-size:27px;
+    font-weight: bold;
+}
+.description p:nth-of-type(2){
+    font-size:12px;
+    padding-top: 2em;
+}
+.description p:nth-of-type(3){
+    font-size:12px;
+    padding-top: 1em;
+}
+.newsletter{
+    border-top: 1px solid rgb(238, 238, 238);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
+    text-align:center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    border-bottom: 1px solid rgb(238, 238,238);
+}
+.newsletter p:nth-of-type(1){
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1.25em;
+}
+.newsletter p:nth-of-type(2){
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 1.25em;
+}
+.newsletter label{
+    display: block;
+    padding-top: 4em;
+    font-size: 12px;
+}
+.newsletter input{
+    border: none;
+    border-bottom: solid 1px black;
+    width: 600px;
+}
+.contact{
+    border-top: 1px solid rgb(238, 238, 238);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
+    text-align:center;
+    padding-top: 6em;
+    border-bottom: 1px solid rgb(238, 238,238);
+}
+.contact p:nth-of-type(1){
+    font-weight: bold;
+    letter-spacing: .4px;
+    line-height: 28px
+
+}
+.contact ul{
+    display: inline-block;
+
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color: black;
+}
+.contact ul li:nth-of-type(1) a{
+    color: #6fd5a4;
+}

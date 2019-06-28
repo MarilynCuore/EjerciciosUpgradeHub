@@ -1,0 +1,51 @@
+.logo{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    background: white;
+}
+.breadcrump{
+    list-style: none;
+}
+.breadcrump li{
+    display: inline-block;
+}
+
+.breadcrump li a{
+    text-decoration: none;
+    color: #d6d6d6;
+    margin-left:1em;
+}
+.breadcrump li:last-child a {
+    color: black;
+}
+.gallery-wrapper{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 310px 310px 310px 310px;
+    grid-gap: 40px;
+    padding-top: 10em;
+}
+.gallery div img{
+    width:310px;
+}
+.product-info{
+    text-align: center;
+    margin-top: 1em;
+}
+.product-info .product{
+    font-weight: 600;
+}
+.product-info .price{
+    font-weight: bold;
+}

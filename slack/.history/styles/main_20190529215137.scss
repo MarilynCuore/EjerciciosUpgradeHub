@@ -1,0 +1,48 @@
+body {
+  overflow-x: hidden;
+}
+
+/*Typography*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap");
+
+/*Variable*/
+$font-principal: "Roboto", sans-serif;
+$color-typography: #454545;
+$principal-color: #611f69;
+
+/*Class*/
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.button_principal {
+  background-color: $principal-color;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+/*Header*/
+header {
+  nav {
+    .main-nav {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          padding-left: 1rem;
+          .main-nav__logo {
+            width: 100px;
+          }
+          a {
+            font-size: 1rem;
+            color: $color-typography;
+            font-family: $font-principal;
+          }
+        }
+      }
+    }
+  }
+}

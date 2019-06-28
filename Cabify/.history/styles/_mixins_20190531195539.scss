@@ -1,0 +1,12 @@
+@mixin fonticon($font) {
+    font-family: "Font Awesome 5 Free";
+    content: $font;
+    display: inline-block;
+    font-size: .8rem;
+    color: $lighter-grey;
+    position: absolute;
+    font-weight: 900;
+    left: -20px;
+    top: 1px;
+  }
+  

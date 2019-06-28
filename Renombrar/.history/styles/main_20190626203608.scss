@@ -1,0 +1,9 @@
+.table-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    text-align: center;
+    padding: 3rem;
+    background: #b3b3b3;
+    color: #3e3e3e;
+}

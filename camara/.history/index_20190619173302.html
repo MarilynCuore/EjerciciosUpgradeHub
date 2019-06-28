@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+    <script>
+        function makeRequestModern() {
+            fetch('https://api.oceandrivers.com/v1.0/getWebCams/')
+                .then( response => response.json())
+                .then( camaras => draw(camaras) )
+                .catch(error => alert("Hubo un error"))
+        }
+        //Petición Servidor
+        function makeRequest(){
+            let httpRequest = new XMLHttpRequest();
+
+            function handleResponse(response){
+                if(httpRequest.readyState === 4){
+                    if(httpRequest.status === 200){
+                        let cameras = JSON.parse(httpRequest.responseText);
+                        draw(cameras)
+                    }
+                }
+            }
+            httpRequest.onreadystatechange= handleResponse;
+            httpRequest.open('GET', 'https://api.oceandrivers.com/v1.0/getWebCams/');
+            httpRequest.send();
+        };
+
+        // Init
+        function init() {
+            //makeRequest()
+            makeRequestModern()
+        }
+
+        function draw(cameras) {
+            const list = document.querySelector("#list")
+            let li = ''
+            cameras.forEach(camara => {
+                li += `
+                    <li>
+                        <a href="${camara.url}" target="_blank"> ${camara.name}</a>
+                    </li>
+                `
+            });
+            list.innerHTML = li
+        }
+        window.addEventListener('load', () => init() );
+    </script>
+</body>
+</html>

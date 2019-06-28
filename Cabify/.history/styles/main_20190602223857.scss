@@ -1,0 +1,68 @@
+@import "_typography";
+@import "_variable";
+@import "_mixins";
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*Nav*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    &:nth-of-type(2) {
+      li {
+        &:nth-of-type(2) {
+          a {
+            position: relative;
+            &::after {
+              @include fonticon("\f107");
+            }
+          }
+        }
+      }
+    }
+    li {
+      list-style: none;
+      padding-right: 2rem;
+      a {
+        text-decoration: none;
+        font-family: $font;
+        font-size: 0.8rem;
+        color: $color-primary;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__section_one {
+    width: 70%;
+    h1 {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      display: inline;
+    }
+    .main__section_select {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 2rem;
+        select {
+          border: 1px solid $color-secundary;
+          border-radius: 0.5rem;
+        
+        }
+      }
+  }
+
+}

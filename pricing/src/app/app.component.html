@@ -1,0 +1,67 @@
+<div>
+    <button mat-button (click)="currency = 'EUR'">EUROS</button>
+    <button mat-button (click)="currency = 'GBP'">LIBRAS</button>
+    <button mat-button (click)="currency = 'USD'">DOLARES</button>
+</div>
+<div class="container" *ngIf="rates">
+  <section class="card">
+    <div class="card_inner__circle">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png" alt="">
+    </div>
+    <div class="card_inner__header">
+      <img src="http://www.pixeden.com/media/k2/galleries/343/002-city-vector-background-town-vol2.jpg" alt="">
+    </div>
+    <div class="card_inner__content">
+      <div class="title">Edición especial</div>
+      <div class="price">{{ planes.special.price | prinCurrency:currency:rates }}</div>
+      <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. <br/> <br/>Fusce sed tortor in orci ultrices tempor quis ut leo. Fusce imperdiet eget ante eu faucibus. Nam rhoncus sapien
+      </div>
+    </div>
+    <div class="card_inner__cta">
+      <button>
+        <span>Comprar ahora</span>
+      </button>
+    </div>
+  </section>
+  <section class="card">
+      <div class="card_inner__circle">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/cog.png" alt="">
+      </div>
+      <div class="card_inner__header">
+        <img src="http://4vector.com/i/free-vector-modern-city_093317_bluecity.jpg" alt="">
+      </div>
+      <div class="card_inner__content">
+        <div class="title">Edición equipo</div>
+        <div class="price">{{ planes.team.price | prinCurrency:currency:rates }}</div>
+        <div class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. <br/> <br/>Fusce sed tortor in orci ultrices tempor quis ut leo. Fusce imperdiet eget ante eu faucibus. Nam rhoncus sapien
+        </div>
+      </div>
+      <div class="card_inner__cta">
+        <button>
+          <span>Comprar ahora</span>
+        </button>
+      </div>
+    </section>
+    <section class="card">
+        <div class="card_inner__circle">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/paperplane.png" alt="">
+        </div>
+        <div class="card_inner__header">
+          <img src="http://7428.net/wp-content/uploads/2013/06/Forest-Creek.jpg" alt="">
+        </div>
+        <div class="card_inner__content">
+          <div class="title">Edición empresa</div>
+          <div class="price">{{ planes.company.price | prinCurrency:currency:rates }}</div>
+          <div class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros. Interdum et malesuada fames ac ante ipsum primis in faucibus. <br/> <br/>Fusce sed tortor in orci ultrices tempor quis ut leo. Fusce imperdiet eget ante eu faucibus. Nam rhoncus sapien
+          </div>
+        </div>
+        <div class="card_inner__cta">
+          <button>
+            <span>Comprar ahora</span>
+          </button>
+        </div>
+      </section>
+</div>

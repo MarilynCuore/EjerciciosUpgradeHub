@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  .section-one {
+    width: 50%;
+    article {
+      img {
+        width: 500px;
+      }
+    }
+  }
+  .section-two {
+    width: 50%;
+  }
+}

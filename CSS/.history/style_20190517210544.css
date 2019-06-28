@@ -1,0 +1,32 @@
+.logo{
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.header{
+    text-align: center;
+    padding: 20px;
+}
+.breadcrump{
+    list-style: none;
+}
+.breadcrump li{
+    display: inline-block;
+}
+
+.breadcrump li a{
+    text-decoration: none;
+    color: #d6d6d6;
+    margin-left:1em;
+}
+.breadcrump li:last-child a {
+    color: black;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-gap: 10px;
+}
+.gallery div img{
+    width:200px;;
+}

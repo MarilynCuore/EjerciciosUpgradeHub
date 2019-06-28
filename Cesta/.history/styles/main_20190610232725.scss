@@ -1,0 +1,19 @@
+@import "_variables";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+.wrapper {
+  .card {
+    .section-one {
+      .section-one__products {
+        .section-one__products_-wrapper_img {
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

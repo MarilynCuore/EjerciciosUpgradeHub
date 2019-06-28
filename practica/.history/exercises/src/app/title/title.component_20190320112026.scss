@@ -1,0 +1,8 @@
+:host{
+    display:block;
+    background-color: white;
+}
+:host-context(.dark) h1{
+    background-color:black;
+    color:white;  
+}

@@ -1,0 +1,26 @@
+@import "_variables";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: 80%;
+    .section-one {
+      -webkit-clip-path: polygon(0 0, 75% 0, 86% 100%, 0 100%);
+      clip-path: polygon(0 0, 75% 0, 86% 100%, 0 100%);
+      background-color: $grey-color;
+      .section-one__products {
+        .section-one__products_-wrapper_img {
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}

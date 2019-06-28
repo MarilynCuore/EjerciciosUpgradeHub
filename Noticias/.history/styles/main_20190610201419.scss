@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .section-one {
+    padding: 3rem;
+    width: 50%;
+    article {
+      img {
+        width: 500px;
+      }
+    }
+  }
+  .section-two {
+    width: 50%;
+  }
+}

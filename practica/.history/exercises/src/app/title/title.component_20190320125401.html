@@ -1,0 +1,15 @@
+
+
+<h1>Curso Angular</h1>
+<h3>Tutor: {{name}}</h3>
+<p>Más información</p>
+<p *ngIf="!isAvailable; else available">Lanzamiento: 25 Dic 2018</p>
+<ng-template #available>
+    <span class="highlight">Curso disponible</span>
+</ng-template>
+<div>
+    <button [disabled]="isAvailable" [ngClass]="{active: isAvailable, shadow:!isAvailable}" type="button" name="button">Inscribirse </button>
+</div>
+ 
+
+

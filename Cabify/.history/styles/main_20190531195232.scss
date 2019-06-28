@@ -1,0 +1,30 @@
+@import "_typograpy";
+@import "_variable";
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/*Nav*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    li {
+      list-style: none;
+      padding-right: 2rem;
+      a {
+        text-decoration: none;
+        font-family: $font;
+        font-size: 0.8rem;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

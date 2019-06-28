@@ -1,0 +1,22 @@
+.container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+header {
+  nav {
+    .main-nav {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        li {
+          list-style: none;
+          padding-left: 1rem;
+          .main-nav__logo {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

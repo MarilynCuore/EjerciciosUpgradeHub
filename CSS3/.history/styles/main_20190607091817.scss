@@ -1,0 +1,15 @@
+.container{
+    position: relative;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .box{
+        position: relative;
+        overflow: hidden;
+        width: 280px;
+        height: 400px;
+        box-sizing: border-box;
+        margin: 20px 0;
+    }
+}

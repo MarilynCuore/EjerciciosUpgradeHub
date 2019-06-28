@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+    </ul>
+    <div id="detailPokemon"></div>
+    <script>
+        function makeRequestModern() {
+            fetch('https://pokeapi.co/api/v2/pokemon/')
+                .then(response => response.json())
+                .then(pokemons => draw(pokemons))
+                .catch(error => alert(error))
+        }
+        // Init
+        function init() {
+            makeRequestModern()
+            detailPokemon(pokemons) 
+        }
+
+        function draw(pokemons) {
+            const list = document.querySelector("#list")
+            let li = ''
+            pokemons.results.forEach(pokemon => {
+                li += `
+                    <li>
+                        <a href="${pokemon.url}" target="_blank" class="selected"> ${pokemon.name}</a>
+                    </li>
+                `
+            });
+            list.innerHTML = li
+        }
+
+        function detailPokemon(pokemons) {
+            let a = document.querySelector('.selected');
+            a.addEventListener('click', evento => {
+                pokemons.forEach(pokemon => {
+                    fetch('pokemon.url')
+                    .then(response => response.json())
+                    .then(detail => draw(pokemons))
+                    .catch(error => alert(error))
+                })
+            })
+        }
+        function showDetail(){
+            const detail = document.querySelector('#detailPokemon');
+            let div = ''
+            detail.forEach( e => {
+                div += `
+                
+                
+                `
+            })
+            
+        }
+
+        window.addEventListener('load', () => init() );
+    </script>
+</body>
+</html>

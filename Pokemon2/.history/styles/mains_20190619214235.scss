@@ -1,0 +1,13 @@
+.hidden{
+ display: none;
+}
+.wrapper-pokemon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 1rem;
+    .pokemon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,14 @@
+@mixin fonticon($font) {
+  font-family: "Font Awesome 5 Free";
+  content: $font;
+  display: inline-block;
+  font-size: 0.8rem;
+  position: absolute;
+  font-weight: 900;
+}
+@mixin bgimg($url){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}

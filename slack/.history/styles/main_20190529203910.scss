@@ -1,0 +1,19 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+      }
+      &:nth-of-type(1) {
+        li {
+          img {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

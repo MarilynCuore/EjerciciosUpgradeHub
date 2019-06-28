@@ -1,0 +1,19 @@
+import { Component, OnInit } from '@angular/core';
+import { ForecastService } from 'src/services/forecast.service';
+import { Weather } from 'src/assets/structures/weather.structures';
+import { Observable } from 'rxjs';
+
+@Component({
+  selector: 'app-forecast',
+  templateUrl: './forecast.component.html',
+  styleUrls: ['./forecast.component.sass']
+})
+export class ForecastComponent implements OnInit {
+  listForecast$: Observable<Weather[]>
+  constructor(private _forecastService : ForecastService) { }
+
+  ngOnInit() {
+    this.listForecast$ = this._forecastService.weather$
+  }
+
+}

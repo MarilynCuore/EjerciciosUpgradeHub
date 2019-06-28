@@ -1,0 +1,7 @@
+<div class="card" *ngIf="weatherService.weather$ | async as weather">
+  <div class="temp">
+    <p>Temperatura</p>
+    <p class="big">{{weather.temp}}º</p>
+  </div>
+  {{weather.name}}
+</div>
